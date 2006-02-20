@@ -699,7 +699,7 @@ static int read_response(CvsServerCtx * ctx, const char * str)
 
 static void ctx_to_fp(CvsServerCtx * ctx, FILE * fp)
 {
-    char line[BUFSIZ];
+    char line[BUFSIZ * 16];
 
     while (1)
     {
